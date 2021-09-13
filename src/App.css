@@ -1,0 +1,9 @@
+/* COMMON */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-bottom: 1px solid green;
+  margin-bottom: 50px;
+}
