@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-import Layout from "./components/Layout/Layout";
+import Navigation from "./navigation/Navigation";
 
 const App = () => {
   return (
     <div className="App">
-      <Layout />
+      <Navigation />
     </div>
   );
 };

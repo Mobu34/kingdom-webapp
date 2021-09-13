@@ -3,10 +3,14 @@ import "./Layout.css";
 
 import Title from "../Title/Title";
 
-const Layout = () => {
+interface ITitle {
+  title: string;
+}
+
+const Layout = ({ title }: ITitle) => {
   return (
     <div className="Layout">
-      <Title title="KINGDOM" />
+      <Title title={title} />
     </div>
   );
 };
