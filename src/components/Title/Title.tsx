@@ -1,6 +1,4 @@
 import React from "react";
-import "./Title.css";
-// import { ITitle } from "./Title";
 
 export interface ITitle {
   title: string;
