@@ -7,6 +7,7 @@ import { apiGetItems } from "../api/get.api";
 
 import Layout from "../components/Layout/Layout";
 import Item from "../components/Item/Item";
+import Button from "../components/Button/Button";
 
 const Home = () => {
   const dispatch: AppDispatch = useDispatch();
@@ -21,11 +22,13 @@ const Home = () => {
     })();
   }, []);
 
-  console.log("data =", data);
-
   return (
     <div>
       <Layout title="KINGDOM">
+        <Button
+          title="Ajouter un nouveau manga"
+          onClick={() => console.log("clicked")}
+        />
         {data?.map((d) => {
           return <Item {...d} />;
         })}
