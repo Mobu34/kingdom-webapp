@@ -1,18 +1,18 @@
 import { createSlice, PayloadAction, CaseReducer } from "@reduxjs/toolkit";
 
 interface IItemSlice {
-  items?: string;
+  items?: [];
 }
 
 const initialState: IItemSlice = {
-  items: "test_1",
+  items: [],
 };
 
 const itemSlice = createSlice({
   name: "item",
   initialState,
   reducers: {
-    items: (state, action: PayloadAction<string>) => {
+    items: (state, action: PayloadAction<[]>) => {
       state.items = action.payload;
     },
   },

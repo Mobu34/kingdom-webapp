@@ -5,12 +5,14 @@ import Title from "../Title/Title";
 
 interface ITitle {
   title: string;
+  children: any;
 }
 
-const Layout = ({ title }: ITitle) => {
+const Layout = ({ title, children }: ITitle) => {
   return (
     <div className="Layout">
       <Title title={title} />
+      {children}
     </div>
   );
 };
