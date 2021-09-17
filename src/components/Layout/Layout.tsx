@@ -1,5 +1,6 @@
 import React from "react";
-import "./Layout.css";
+
+import { StyleLayoutDivContainer } from "./Layout.styled";
 
 import Title from "../Title/Title";
 
@@ -10,10 +11,10 @@ interface ITitle {
 
 const Layout = ({ title, children }: ITitle) => {
   return (
-    <div className="Layout">
+    <StyleLayoutDivContainer>
       <Title title={title} />
       {children}
-    </div>
+    </StyleLayoutDivContainer>
   );
 };
 
